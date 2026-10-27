@@ -1,0 +1,8 @@
+codice,nome,classe,aliquota,fattore,lotto
+AZ_MONDO,ETF Azionario Mondo,Azionario,0.26,1.0,1
+AZ_EUROPA,ETF Azionario Europa,Azionario,0.26,1.0,1
+AZ_EMERGENTI,ETF Azionario Paesi Emergenti,Azionario,0.26,1.0,1
+BTP_2032,"BTP 2,50% 2032",Obbligazionario,0.125,0.01,1000
+OBB_CORP,ETF Obbligazioni Societarie Euro,Obbligazionario,0.26,1.0,1
+OBB_GOV_BREVE,ETF Governativi Euro 1-3 anni,Obbligazionario,0.26,1.0,1
+ORO,ETC Oro fisico,Oro,0.26,1.0,1

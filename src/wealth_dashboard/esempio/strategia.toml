@@ -1,0 +1,31 @@
+# Strategia della famiglia Conti (esempio dimostrativo, non riferito a persone reali)
+cliente = "Famiglia Conti"
+spesa_mensile = 4500            # spesa familiare, per misurare la riserva di liquidità
+mesi_liquidita_minima = 6
+
+# Allocazione obiettivo del patrimonio finanziario: peso e banda di tolleranza (in punti, 0.05 = ±5 punti)
+[obiettivo]
+Azionario = { peso = 0.50, banda = 0.05 }
+Obbligazionario = { peso = 0.35, banda = 0.05 }
+Oro = { peso = 0.05, banda = 0.02 }
+"Liquidità" = { peso = 0.10, banda = 0.04 }
+
+[limiti]
+peso_massimo_strumento = 0.30   # sul patrimonio finanziario
+quota_immobiliare_massima = 0.60  # immobili al netto dei mutui, sul patrimonio netto
+ltv_massimo = 0.50              # debito residuo / valore dell'immobile
+drawdown_allerta = 0.10         # perdita dal massimo che merita una verifica
+
+# Strumenti da usare per i nuovi acquisti di ogni classe
+[strumenti_preferiti]
+Azionario = "AZ_MONDO"
+Obbligazionario = "OBB_GOV_BREVE"
+Oro = "ORO"
+
+# Benchmark a pesi costanti, coerente con l'allocazione obiettivo
+[benchmark]
+AZ_MONDO = 0.50
+OBB_CORP = 0.20
+OBB_GOV_BREVE = 0.15
+ORO = 0.05
+"Liquidità" = 0.10
